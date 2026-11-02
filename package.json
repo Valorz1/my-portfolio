@@ -1,0 +1,7 @@
+{
+  "name": "parmbir-portfolio",
+  "private": true,
+  "scripts": {
+    "build:css": "npx --yes tailwindcss@3.4.16 -i ./src/input.css -o ./assets/tailwind.css --minify"
+  }
+}

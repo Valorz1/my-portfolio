@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Parmbir Singh Nandha</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#181818">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial, Helvetica, sans-serif' font-size='32' font-weight='700' letter-spacing='-2.5'%3E%3Ctspan fill='%23F2F2F2'%3EP%3C/tspan%3E%3Ctspan fill='%23D91B24'%3E/%3C/tspan%3E%3Ctspan fill='%23F2F2F2'%3EN%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      var dark = true;
+      try { var s = localStorage.getItem('theme'); if (s) dark = s === 'dark'; } catch (e) {}
+      if (dark) document.documentElement.classList.add('dark');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <style>
+    :root { --bg: #FFFFFF; --fg: #141414; --muted: #4F4F4F; --ruby: #D91B24; --wine: #761F21; --ease: cubic-bezier(0.22, 1, 0.36, 1); color-scheme: light; }
+    .dark { --bg: #181818; --fg: #F4F4F4; --muted: #C4C4C4; color-scheme: dark; }
+    body { background: var(--bg); color: var(--fg); font-family: 'Geist', ui-sans-serif, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    ::selection { background: var(--ruby); color: #FFFFFF; }
+    h1 { text-wrap: balance; } p { text-wrap: pretty; }
+    .heading-3 { font-size: 1.875rem; line-height: 2.25rem; font-weight: 600; letter-spacing: -0.02em; }
+    @media (min-width: 768px) { .heading-3 { font-size: 2.25rem; line-height: 2.5rem; } }
+    .body-3 { font-size: 1rem; line-height: 1.5rem; font-weight: 400; }
+    .button-md { font-size: 1rem; line-height: 1.5rem; font-weight: 600; }
+    .btn { background: var(--ruby); color: #FFFFFF; transition: background-color 300ms var(--ease), transform 500ms var(--ease); }
+    .btn:hover { background: var(--wine); } .btn:active { transform: scale(0.98); }
+    .btn i { transition: transform 500ms var(--ease); } .btn:hover i { transform: translateX(-4px); }
+    @media (prefers-reduced-motion: reduce) { .btn:hover i { transform: none; } }
+  </style>
+  <link rel="stylesheet" href="/assets/tailwind.css">
+</head>
+<body class="min-h-screen">
+  <main class="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-24 md:px-8">
+    <p class="sr-only">Error 404</p>
+    <pre id="code" class="self-start font-mono text-xs leading-4 sm:text-sm sm:leading-5" style="color: var(--ruby)" aria-hidden="true">██╗  ██╗ ██████╗ ██╗  ██╗
+██║  ██║██╔═████╗██║  ██║
+███████║██║██╔██║███████║
+╚════██║████╔╝██║╚════██║
+     ██║╚██████╔╝     ██║
+     ╚═╝ ╚═════╝      ╚═╝</pre>
+    <h1 class="mt-8 max-w-[680px] heading-3">This page doesn't exist.</h1>
+    <p class="mt-4 max-w-[680px] body-3" style="color: var(--muted)">The link may be out of date, or the address may have a typo. Everything I've built is on the home page.</p>
+    <a href="/" class="btn mt-8 inline-flex items-center gap-2 self-start rounded-xl px-3 py-2 button-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2" style="--tw-ring-color: var(--ruby); --tw-ring-offset-color: var(--bg)">
+      <i class="ph ph-arrow-left text-lg" aria-hidden="true"></i>Back to the home page
+    </a>
+  </main>
+  <script>
+    (function () {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var el = document.getElementById('code'), text = el.textContent, G = '█▓▒░╔╗╚╝═║', start = performance.now();
+      function frame(now) {
+        var p = Math.min(1, (now - start) / 1000), n = Math.floor(p * text.length), out = '';
+        for (var i = 0; i < text.length; i++) { var c = text[i]; out += (i < n || c === ' ' || c === '\n') ? c : G[(Math.random() * G.length) | 0]; }
+        el.textContent = out;
+        if (p < 1) requestAnimationFrame(frame); else el.textContent = text;
+      }
+      requestAnimationFrame(frame);
+    })();
+  </script>
+</body>
+</html>
